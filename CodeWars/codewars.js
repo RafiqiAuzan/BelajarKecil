@@ -13,4 +13,13 @@
 // }
 // console.log(s);
 
-// document.getElementById("output").innerHTML = `${s}`;
+// document.getElementById("output_a").innerHTML = `${s}`;
+
+// 2.
+
+function numberToString(num) {
+    // Return a string of the number here!
+    return num.toString();
+  }
+  
+  console.log(numberToString(53));

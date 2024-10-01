@@ -17,9 +17,21 @@
 
 // 2.
 
-function numberToString(num) {
-    // Return a string of the number here!
-    return num.toString();
-  }
+// function numberToString(num) {
+//     // Return a string of the number here!
+//     return num.toString();
+//   }
   
-  console.log(numberToString(53));
+//   console.log(numberToString(53));
+
+// 3.
+
+function boolToWord( bool ){
+  if ( bool == true) {
+    return "Yes";
+  } else {
+    return "No";
+  }
+}
+
+console.log(boolToWord(true));

@@ -26,12 +26,20 @@
 
 // 3.
 
-function boolToWord( bool ){
-  if ( bool == true) {
-    return "Yes";
-  } else {
-    return "No";
-  }
+// function boolToWord( bool ){
+//   if ( bool == true) {
+//     return "Yes";
+//   } else {
+//     return "No";
+//   }
+// }
+
+// console.log(boolToWord(true));
+
+// 4.
+
+function solution(str){
+  return str.split("").reverse().join("");
 }
 
-console.log(boolToWord(true));
+console.log(solution("hello"));

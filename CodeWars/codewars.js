@@ -38,8 +38,26 @@
 
 // 4.
 
-function solution(str){
-  return str.split("").reverse().join("");
+// function solution(str){
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(solution("hello"));
+
+// 5.
+
+function basicOp(operation, value1, value2){
+  //Code
+  switch (operation) {
+      case '+' :
+      return value1 + value2;
+      case '-' :
+      return value1 - value2;
+      case '*' :
+      return value1 * value2;
+      case '/' :
+      return value1 / value2;
+  }
 }
 
-console.log(solution("hello"));
+console.log(basicOp("-", 12, 7));

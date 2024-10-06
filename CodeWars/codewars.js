@@ -65,17 +65,22 @@
 // 6.
 
 function countPositivesSumNegatives(input) {
-  // your code here
+  if (input === null || input.length === 0) {
+    return [];
+  }
+
   let positive = 0;
   let negative = 0;
-  for (i = 0; i < input.length; i++) {
-     if (input[i] > 0) {
-       positive++;
-     } else if (input[i] < 0) {
-       negative += input[i];  
-     }
-   }
+  
+  for (const num of input) {
+    if (num > 0) {
+      positive++;
+    } else if (num < 0) {
+      negative += num;
+    }
+  }
+  
   return [positive, negative];
 }
 
-console.log(countPositivesSumNegatives([1,2,3,-4,-5]));
+console.log(countPositivesSumNegatives([1, 2, 3, -4, -5])); // Output: [3, -9]

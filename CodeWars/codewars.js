@@ -46,18 +46,36 @@
 
 // 5.
 
-function basicOp(operation, value1, value2){
-  //Code
-  switch (operation) {
-      case '+' :
-      return value1 + value2;
-      case '-' :
-      return value1 - value2;
-      case '*' :
-      return value1 * value2;
-      case '/' :
-      return value1 / value2;
-  }
+// function basicOp(operation, value1, value2){
+//   //Code
+//   switch (operation) {
+//       case '+' :
+//       return value1 + value2;
+//       case '-' :
+//       return value1 - value2;
+//       case '*' :
+//       return value1 * value2;
+//       case '/' :
+//       return value1 / value2;
+//   }
+// }
+
+// console.log(basicOp("-", 12, 7));
+
+// 6.
+
+function countPositivesSumNegatives(input) {
+  // your code here
+  let positive = 0;
+  let negative = 0;
+  for (i = 0; i < input.length; i++) {
+     if (input[i] > 0) {
+       positive++;
+     } else if (input[i] < 0) {
+       negative += input[i];  
+     }
+   }
+  return [positive, negative];
 }
 
-console.log(basicOp("-", 12, 7));
+console.log(countPositivesSumNegatives([1,2,3,-4,-5]));
